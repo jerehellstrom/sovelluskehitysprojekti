@@ -95,12 +95,12 @@ const Cart = () => {
         <table className={styles.table}>
           <tbody>
             <tr className={styles.trTitle}>
-              <th>Product</th>
-              <th>Name</th>
-              <th>Extras</th>
-              <th>Price</th>
-              <th>Quantity</th>
-              <th>Total</th>
+              <th>Tuote</th>
+              <th>Nimi</th>
+              <th>Lisäaineet</th>
+              <th>Hinta</th>
+              <th>Määrä</th>
+              <th>Summa</th>
             </tr>
           </tbody>
           <tbody>
@@ -144,15 +144,15 @@ const Cart = () => {
       </div>
       <div className={styles.right}>
         <div className={styles.wrapper}>
-          <h2 className={styles.title}>CART TOTAL</h2>
+          <h2 className={styles.title}>OSTOSKORI</h2>
           <div className={styles.totalText}>
-            <b className={styles.totalTextTitle}>Subtotal:</b>${cart.total}
+            <b className={styles.totalTextTitle}>Välisumma:</b>${cart.total}
           </div>
           <div className={styles.totalText}>
-            <b className={styles.totalTextTitle}>Discount:</b>$0.00
+            <b className={styles.totalTextTitle}>Alennus:</b>$0.00
           </div>
           <div className={styles.totalText}>
-            <b className={styles.totalTextTitle}>Total:</b>${cart.total}
+            <b className={styles.totalTextTitle}>Loppuhinta:</b>${cart.total}
           </div>
           {open ? (
             <div className={styles.paymentMethods}>
@@ -160,7 +160,7 @@ const Cart = () => {
                 className={styles.payButton}
                 onClick={() => setCash(true)}
               >
-                CASH ON DELIVERY
+                KÄTEISMAKSU
               </button>
               <PayPalScriptProvider
                 options={{

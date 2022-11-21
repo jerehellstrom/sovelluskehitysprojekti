@@ -54,7 +54,7 @@ const handleSize = (sizeIndex) => {
         <div className={styles.sizes}>
           <div className={styles.size} onClick={() => handleSize(0)}>
             <Image src="/img/size.png" layout="fill" alt="" />
-            <span className={styles.number}>Small</span>
+            <span className={styles.number}>Pieni</span>
           </div>
           <div className={styles.size} onClick={() => handleSize(1)}>
             <Image src="/img/size.png" layout="fill" alt="" />
@@ -62,7 +62,7 @@ const handleSize = (sizeIndex) => {
           </div>
           <div className={styles.size} onClick={() => handleSize(2)}>
             <Image src="/img/size.png" layout="fill" alt="" />
-            <span className={styles.number}>Large</span>
+            <span className={styles.number}>Iso</span>
           </div>
         </div>
         <h3 className={styles.choose}>Choose additional ingredients</h3>
@@ -82,7 +82,7 @@ const handleSize = (sizeIndex) => {
         </div>
         <div className={styles.add}>
             <input onChange={(e)=>setQuantity(e.target.value)} type="number" defaultValue={1} className={styles.quantity}/>
-            <button className={styles.button} onClick={handleClick}>Add to Cart</button>
+            <button className={styles.button} onClick={handleClick}>Lisää ostoskoriin</button>
         </div>
       </div>
     </div>
