@@ -176,7 +176,7 @@ const Cart = () => {
             </div>
           ) : (
             <button onClick={() => setOpen(true)} className={styles.button}>
-              CHECKOUT NOW!
+              VARMISTA TILAUS
             </button>
           )}
         </div>
