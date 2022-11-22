@@ -12,9 +12,24 @@ const OrderSchema = new mongoose.Schema(
       required: true,
       maxlength: 200,
     },
+    number: {
+      type: String,
+      required: true,
+      maxlength: 60,
+    },
     total: {
       type: Number,
       required: true,
+    },
+    product: {
+      type: String,
+      required: true,
+      maxlength: 200,
+    },
+    info: {
+      type: String,
+      required: true,
+      maxlength: 500,
     },
     status: {
       type: Number,

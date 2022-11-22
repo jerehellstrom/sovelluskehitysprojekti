@@ -4,9 +4,12 @@ import styles from "../styles/OrderDetail.module.css";
 const OrderDetail = ({ total, createOrder }) => {
   const [customer, setCustomer] = useState("");
   const [address, setAddress] = useState("");
+  const [number, setNumber] = useState("");
+
+  
 
   const handleClick = () => {
-    createOrder({ customer, address, total, method: 0 });
+    createOrder({ customer, address, number, info, product, total, method: 0 });
   };
 
   return (
@@ -28,6 +31,7 @@ const OrderDetail = ({ total, createOrder }) => {
             type="text"
             placeholder="+358 2342348"
             className={styles.input}
+            onChange={(e) => setNumber(e.target.value)}
           />
         </div>
         <div className={styles.item}>

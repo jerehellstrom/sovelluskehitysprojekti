@@ -11,6 +11,11 @@ const ProductSchema = new mongoose.Schema({
         reuired: true,
         maxlength: 60,
     },
+    number: {
+        type: String,
+        required: true,
+        maxlength: 60,
+      },
     total: {
         type: Number,
         required: true,
