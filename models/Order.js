@@ -21,16 +21,6 @@ const OrderSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
-    product: {
-      type: String,
-      required: true,
-      maxlength: 200,
-    },
-    info: {
-      type: String,
-      required: true,
-      maxlength: 500,
-    },
     status: {
       type: Number,
       default: 0,

@@ -9,7 +9,7 @@ const OrderDetail = ({ total, createOrder }) => {
   
 
   const handleClick = () => {
-    createOrder({ customer, address, number, info, product, total, method: 0 });
+    createOrder({ customer, address, number, total, method: 0 });
   };
 
   return (
