@@ -12,13 +12,7 @@ const Navbar = () => {
                 <Image src="/img/logoruokamieles.png" alt="" width="240" height="75"/>
                 </div>
         </div>
-            <div className={styles.item}>
-                <ul className={styles.list}>
-                    <li className={styles.listItem}>Homepage</li>
-                    <li className={styles.listItem}>Menu</li>                            
-                    <li className={styles.listItem}>Contact</li>
-                </ul>
-            </div>
+
             <Link href="/cart" passHref>
             <div className={styles.cart}>
                 <div>

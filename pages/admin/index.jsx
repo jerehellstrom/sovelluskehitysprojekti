@@ -15,17 +15,17 @@ const index = ( {orders, products }) => {
                 <br/>
                 <br/>
                 <br/>
-                <button className={styles.addButton}>Add product</button>
+                <button className={styles.addButton}>Lisää Tuote</button>
             </div>
             <div className={styles.item}>
-                <h1 className={styles.title}>Product</h1>
+                <h1 className={styles.title}>Tuote</h1>
                 <table className={styles.table}>
                     <tbody>
                         <tr className={styles.trTitle}>
-                            <th>Image</th>
+                            <th>Kuva</th>
                             <th>Id</th>
-                            <th>Title</th>
-                            <th>Price</th>
+                            <th>Tuote</th>
+                            <th>Hinta</th>
                         </tr>
                     </tbody>
                     {products.map(product=>(
@@ -36,8 +36,8 @@ const index = ( {orders, products }) => {
                             <td>{product.title}</td>
                             <td>${product.prices[0]}</td>
                             <td>
-                                <button className={styles.button}>Edit</button>
-                                <button className={styles.button}>Delete</button>
+                                <button className={styles.button}>Muokkaa</button>
+                                <button className={styles.button}>Poista</button>
                             </td>
                         </tr>
                     </tbody>
@@ -50,9 +50,9 @@ const index = ( {orders, products }) => {
                     <tbody>
                         <tr className={styles.trTitle}>
                             <th>Id</th>
-                            <th>Customer</th>
-                            <th>Total</th>
-                            <th>Payment</th>
+                            <th>Asiakas</th>
+                            <th>Summa</th>
+                            <th>Maksutapa</th>
                         </tr>
                     </tbody>
                     <tbody>

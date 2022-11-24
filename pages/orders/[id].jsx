@@ -37,60 +37,6 @@ const Order = ({ order }) => {
             </tr>
           </table>
         </div>
-        <div className={styles.row}>
-          <div className={statusClass(0)}>
-            <Image src="/img/paid.png" width={30} height={30} alt="" />
-            <span>Maksu</span>
-            <div className={styles.checkedIcon}>
-              <Image
-                className={styles.checkedIcon}
-                src="/img/checked.png"
-                width={20}
-                height={20}
-                alt=""
-              />
-            </div>
-          </div>
-          <div className={statusClass(1)}>
-            <Image src="/img/bake.png" width={30} height={30} alt="" />
-            <span>Valmistetaan</span>
-            <div className={styles.checkedIcon}>
-              <Image
-                className={styles.checkedIcon}
-                src="/img/checked.png"
-                width={20}
-                height={20}
-                alt=""
-              />
-            </div>
-          </div>
-          <div className={statusClass(2)}>
-            <Image src="/img/bike.png" width={30} height={30} alt="" />
-            <span>Matkalla</span>
-            <div className={styles.checkedIcon}>
-              <Image
-                className={styles.checkedIcon}
-                src="/img/checked.png"
-                width={20}
-                height={20}
-                alt=""
-              />
-            </div>
-          </div>
-          <div className={statusClass(3)}>
-            <Image src="/img/delivered.png" width={30} height={30} alt="" />
-            <span>Toimitettu</span>
-            <div className={styles.checkedIcon}>
-              <Image
-                className={styles.checkedIcon}
-                src="/img/checked.png"
-                width={20}
-                height={20}
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
       </div>
       <div className={styles.right}>
         <div className={styles.wrapper}>
