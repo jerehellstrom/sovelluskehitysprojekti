@@ -1103,28 +1103,6 @@
     "@nodelib/fs.scandir" "2.1.5"
     "fastq" "^1.6.0"
 
-"@paypal/paypal-js@^5.0.6":
-  "integrity" "sha512-hdJUnAmsmhsZ1D4WgWg3Q7cpoUZ3Xxrr2LMREsOZVAARNVtzoy1ZZrDKzvFYEXUyWWDRr45Bc6Ov3yvZidLMrA=="
-  "resolved" "https://registry.npmjs.org/@paypal/paypal-js/-/paypal-js-5.1.2.tgz"
-  "version" "5.1.2"
-  dependencies:
-    "promise-polyfill" "^8.2.3"
-
-"@paypal/react-paypal-js@^7.8.1":
-  "integrity" "sha512-+cAa0QLJUO1TUlFk/xqJsfEm6Ywtg3kvMmxf2EJcmVJDkNHc6+7Qq2o6Gt1mTn16ZG4/2uWRROeKcoXFFdNrQA=="
-  "resolved" "https://registry.npmjs.org/@paypal/react-paypal-js/-/react-paypal-js-7.8.1.tgz"
-  "version" "7.8.1"
-  dependencies:
-    "@paypal/paypal-js" "^5.0.6"
-    "@paypal/sdk-constants" "^1.0.116"
-
-"@paypal/sdk-constants@^1.0.116":
-  "integrity" "sha512-6T/HpO1RiQtVC/VSz1lLJJNroq9AxJbejzp+EnFoqu30lmSp9EUrogxyfGkMpZUxZNSxBJy9gCcUOgHbJ8yd3A=="
-  "resolved" "https://registry.npmjs.org/@paypal/sdk-constants/-/sdk-constants-1.0.127.tgz"
-  "version" "1.0.127"
-  dependencies:
-    "hi-base32" "^0.5.0"
-
 "@reduxjs/toolkit@^1.9.0":
   "integrity" "sha512-ak11IrjYcUXRqlhNPwnz6AcvA2ynJTu8PzDbbqQw4a3xR4KZtgiqbNblQD+10CRbfK4+5C79SOyxnT9dhBqFnA=="
   "resolved" "https://registry.npmjs.org/@reduxjs/toolkit/-/toolkit-1.9.0.tgz"
