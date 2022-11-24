@@ -62,7 +62,11 @@ const Order = ({ order }) => {
 export const getServerSideProps = async ({ params }) => {
   const res = await axios.get(`https://ruoka-app.herokuapp.com/api/orders/${params.id}`);
   return {
-    props: { order: res.data },
+    props:{
+      products:productRes.data,
+      pizza: res.data,
+      order: res.data,
+  },
   };
 };
 

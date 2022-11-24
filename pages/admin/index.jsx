@@ -76,8 +76,9 @@ export const getServerSideProps = async ()=>{
 
     return{
         props:{
-            orders:orderRes.data,
             products:productRes.data,
+            pizza: res.data,
+            order: res.data,
         },
     };
 };
