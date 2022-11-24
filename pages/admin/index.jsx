@@ -71,8 +71,8 @@ const index = ( {orders, products }) => {
 
 
 export const getServerSideProps = async ()=>{
-    const productRes = await axios.get("http://localhost:3000/api/products")
-    const orderRes = await axios.get("http://localhost:3000/api/orders")
+    const productRes = await axios.get("/api/products")
+    const orderRes = await axios.get("/api/orders")
 
     return{
         props:{
