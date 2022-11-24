@@ -20,12 +20,10 @@ export default function Home({pizzaList}) {
 }
 
 export const getServerSideProps = async () =>{
-  const res = await axios.get("https://ruoka-app.herokuapp.com/api/products");
+  const res = await axios.get("http://localhost:3000/api/products");
   return {
     props:{
-      products:productRes.data,
-      pizza: res.data,
-      order: res.data,
-  },
+      pizzaList: res.data
+    }
   }
 };

@@ -71,14 +71,13 @@ const index = ( {orders, products }) => {
 
 
 export const getServerSideProps = async ()=>{
-    const productRes = await axios.get("https://ruoka-app.herokuapp.com/api/products")
-    const orderRes = await axios.get("https://ruoka-app.herokuapp.com/api/orders")
+    const productRes = await axios.get("http://localhost:3000/api/products")
+    const orderRes = await axios.get("http://localhost:3000/api/orders")
 
     return{
         props:{
+            orders:orderRes.data,
             products:productRes.data,
-            pizza: res.data,
-            order: res.data,
         },
     };
 };
