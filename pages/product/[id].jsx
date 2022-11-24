@@ -48,9 +48,9 @@ const handleSize = (sizeIndex) => {
       </div>
       <div className={styles.right}>
         <h1 className={styles.title}>{pizza.title}</h1>
-        <span className={styles.price}>${price}</span>
+        <span className={styles.price}>€{price}</span>
         <p className={styles.desc}>{pizza.desc}</p>
-        <h3 className={styles.choose}>Choose the size</h3>
+        <h3 className={styles.choose}>Valitse koko</h3>
         <div className={styles.sizes}>
           <div className={styles.size} onClick={() => handleSize(0)}>
             <Image src="/img/size.png" layout="fill" alt="" />
@@ -65,7 +65,7 @@ const handleSize = (sizeIndex) => {
             <span className={styles.number}>Iso</span>
           </div>
         </div>
-        <h3 className={styles.choose}>Choose additional ingredients</h3>
+        <h3 className={styles.choose}>Valitse lisäaineet</h3>
         <div className={styles.ingredients}>
           {pizza.extraOptions.map((option) => (
           <div className={styles.option} key={option._id}>
