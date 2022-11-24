@@ -45,7 +45,7 @@ const OrderDetail = ({ total, createOrder }) => {
           />
         </div>
         <button className={styles.button} onClick={handleClick}>
-          Order
+          Tilaa
         </button>
       </div>
     </div>
